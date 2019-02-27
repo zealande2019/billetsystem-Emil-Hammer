@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BilletLibrary
+﻿namespace BilletLibrary
 {
     public class Car : Vehicle
     {

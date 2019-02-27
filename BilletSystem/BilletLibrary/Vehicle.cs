@@ -6,13 +6,18 @@ namespace BilletLibrary
     {
         private string _licenseplate;
         public DateTime Date;
+        public decimal Discount;
 
         public abstract string VehicleStatus();
         public abstract decimal Price();
+        public double PriceWithDiscount()
+        {
+            return Convert.ToDouble(Price() - Price() * Discount);
+        }
 
         public string Licenseplate
         {
-            get{ return _licenseplate;}
+            get => _licenseplate;
             set
             {
                 if (value.Length <= 7 && value.Length > 0)
@@ -26,4 +31,4 @@ namespace BilletLibrary
             }
         }
     }
-}   
+}

@@ -23,6 +23,14 @@ namespace UnitTestBilletSystem
             Assert.AreEqual(_car.Price(), 240);
         }
 
+        // Testing that the price of a car with a discount of 5% returns
+        [TestMethod]
+        public void TestPriceWithDiscount()
+        {
+            _car.Discount = 0.05M;
+            Assert.AreEqual(228.0, _car.PriceWithDiscount(), 0.001);
+        }
+
         // Testing that an exception will be thrown when trying to input more than 7 characters in licenseplate
         [TestMethod]
         [ExpectedException(typeof(Exception))]

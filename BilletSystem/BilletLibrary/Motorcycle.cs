@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace BilletLibrary
+﻿namespace BilletLibrary
 {
-    public class MC : Vehicle
+    public class Motorcycle : Vehicle
     {
         public override decimal Price()
         {
