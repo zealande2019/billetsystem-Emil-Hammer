@@ -2,16 +2,16 @@
 
 namespace BilletLibrary
 {
-    public class MC : Vehicle
+    public class Car : Vehicle
     {
         public override decimal Price()
         {
-            return 125;
+            return 240;
         }
 
         public override string VehicleStatus()
         {
-            return "MC";
+            return "Bil";
         }
     }
 }
