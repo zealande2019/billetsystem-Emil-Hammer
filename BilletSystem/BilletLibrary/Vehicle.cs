@@ -15,7 +15,7 @@ namespace BilletLibrary
             get{ return _licenseplate;}
             set
             {
-                if (value.Length <= 7)
+                if (value.Length <= 7 && value.Length > 0)
                 {
                     _licenseplate = value;
                 }
